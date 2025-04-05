@@ -1,0 +1,29 @@
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+        super.sound();
+    }
+}
+
+class Puppy extends Dog {
+    void sound() {
+        System.out.println("Puppy whines");
+    }
+}
+
+public class InheritanceExample {
+    public static void main(String[] args) {
+        Puppy p1 = new Puppy();
+        Dog d1 = new Dog();
+        p1.sound();
+        d1.sound();
+        
+        
+    }
+}
