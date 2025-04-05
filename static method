@@ -1,0 +1,11 @@
+class Utility {
+    static void printMessage() {
+        System.out.println("This is a static method");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Utility.printMessage();
+    }
+}
